@@ -1,1 +1,1 @@
-# Labo-2
+Pour compiler le projet, il faudrait se placer dans le répertoire du Lab2 à partir de la commande cd. Ensuite, vous devez rentrer la commande py test.py puis rentrer les touches p, e, r, a ou q dependamment du choix que nous voulons effectuer.  
