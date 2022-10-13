@@ -10,16 +10,6 @@ static PyObject* Play(PyObject* self, PyObject* args)
     {
         fonction->Play();
     }
-
-    /*if (SUCCEEDED(fonction->hr))
-    {
-        // Wait for completion.
-        long evCode;
-        fonction->pEvent->WaitForCompletion(INFINITE, &evCode);
-
-        // Note: Do not use INFINITE in a real application, because it
-        // can block indefinitely.
-    }*/
     return Py_BuildValue("i", 0);
 }
 
