@@ -1,0 +1,4 @@
+﻿     Création de la bibliothèque C:\Users\fbgoudiaby\Desktop\Lab2\Lab2\Release\Lab2.lib et de l'objet C:\Users\fbgoudiaby\Desktop\Lab2\Lab2\Release\Lab2.exp
+Lab2.obj : error LNK2001: symbole externe non résolu __imp__Py_BuildValue
+Lab2.obj : error LNK2001: symbole externe non résolu __imp__PyModule_Create2
+C:\Users\fbgoudiaby\Desktop\Lab2\Lab2\Release\Lab2.pyd : fatal error LNK1120: 2 externes non résolus
