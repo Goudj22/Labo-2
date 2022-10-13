@@ -1,11 +1,11 @@
 #include <Python.h>
-#include "Fonctionnalité.h"
+#include "FonctionnalitÃ©.h"
 
 
 static PyObject* Play(PyObject* self, PyObject* args)
 {
     
-    Fonctionnalité* fonction = &Fonctionnalité::GetInstance();
+    FonctionnalitÃ©* fonction = &FonctionnalitÃ©::GetInstance();
     if (fonction->m_state == STATE_PAUSED)
     {
         fonction->Play();
@@ -26,7 +26,7 @@ static PyObject* Play(PyObject* self, PyObject* args)
 
 static PyObject* Pause(PyObject* self, PyObject* args)
 {
-    Fonctionnalité* fonction = &Fonctionnalité::GetInstance();
+    FonctionnalitÃ©* fonction = &FonctionnalitÃ©::GetInstance();
     fonction->m_state = STATE_RUNNING;
     if (fonction->m_state == STATE_RUNNING)
     {
@@ -38,7 +38,7 @@ static PyObject* Pause(PyObject* self, PyObject* args)
 
 static PyObject* FastForward(PyObject* self, PyObject* args)
 {
-    Fonctionnalité* fonction = &Fonctionnalité::GetInstance();
+    FonctionnalitÃ©* fonction = &FonctionnalitÃ©::GetInstance();
 
     fonction->FastForward();
     
@@ -47,7 +47,7 @@ static PyObject* FastForward(PyObject* self, PyObject* args)
 
 static PyObject* Restart(PyObject* self, PyObject* args)
 {
-    Fonctionnalité* fonction = &Fonctionnalité::GetInstance();
+    FonctionnalitÃ©* fonction = &FonctionnalitÃ©::GetInstance();
 
     fonction->Restart();
 
@@ -56,7 +56,7 @@ static PyObject* Restart(PyObject* self, PyObject* args)
 
 static PyObject* Quitter(PyObject* self, PyObject* args)
 {
-    Fonctionnalité* fonction = &Fonctionnalité::GetInstance();
+    FonctionnalitÃ©* fonction = &FonctionnalitÃ©::GetInstance();
 
     fonction->Quitter();
 
@@ -71,7 +71,7 @@ static PyMethodDef methods[] = {
           "Generate random number betweeen 0-9" },
         { "Restart", Restart, METH_NOARGS,
           "Generate random number betweeen 0-9" },
-        { "FastFoward", FastForward, METH_NOARGS,
+        { "FastForward", FastForward, METH_NOARGS,
           "Generate random number betweeen 0-9" },
         { "Quitter", Quitter, METH_NOARGS,
           "Generate random number betweeen 0-9" },
